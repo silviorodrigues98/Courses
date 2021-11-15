@@ -1,0 +1,16 @@
+# Faça um programa que leia uma frase pelo teclado e mostre:
+
+fra = str(input('Digite sua frase :'))
+print()
+print('Sua frase tem: ')
+print('v'*40)
+mod = fra.upper()
+var = str(input('Qual letra você quer contar? '))
+mad = var.upper()
+vez = mod.count(mad,0)
+print('Existem {} letras "{}" na sua frase.'.format(vez, var))
+print('-'*40)
+pos = mod.find(mad)
+print('Ela aparece pela primeira vez na posição {}'.format(pos))
+fin = mod.rfind(mad)
+print('Considerando a última vez, ela aparece na posição:{}'.format(fin))

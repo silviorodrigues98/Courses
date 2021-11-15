@@ -1,0 +1,10 @@
+print('Seja bem vindo ao programa de aprendizagem no transporte! ')
+nome = input('Para iniciarmos, preciso que me diga seu nome completo, por gentileza: ')
+print('Ok {}! É um prazer tê-lo em nossa loja virtual. Me chamo Daniele, e estarei aqui para auxilia-lo. '.format(nome))
+cpf = input('Para que possa lhe fornecer um serviço completo, necessito que digite seu CPF: ')
+confirm = input('Por favor {}, confirme que seu CPF é {} para que possamos continuar.'.format(nome, cpf))
+cadastro = input('Ótimo {}!, para finalizarmos, me diga o dia, mês e ano de seu nascimento:'.format(nome))
+print('Obrigada {}! Você nasceu em {} e seu CPF é {}. '.format(nome, cadastro, cpf, ))
+print('É um prazer confirmar que você agora é um funcionário da Empresa Alcace LTDA')
+print('Seja bem vindo!!!')
+

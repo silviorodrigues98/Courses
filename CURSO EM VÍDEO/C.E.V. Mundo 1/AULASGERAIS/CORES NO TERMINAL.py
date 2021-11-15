@@ -1,0 +1,11 @@
+# AULA BONUS QUE ENSINA A COLOCAR CORES EM NOSSOS CÓDIGOS !!!
+
+# PADRÃO ANSI (escape sequence)
+
+# CONTRABARRA
+
+# ///       //  //         //99@55 /4 ▼ccc○9@@@aJØJJ♀$6XMXcB4♦-♣6♣6
+
+# APERTAR ALT92 PARA FAZER CONTRABARRA
+
+#\033['STYLE;TEXT;BACK'm]
