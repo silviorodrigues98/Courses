@@ -1,2 +1,2 @@
 # CURSOS
- Some courses I've finished over tiem, where where I could learn different languages, tools and technologies
+Cursos que eu pude finalizar ao longo do tempo, e que me permitiram aprender e assimilar diversas linguagens, ferramentas e tecnologias.
