@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+        <!--Hoje falaremos sobre as condições no JS.
+        Os códigos normalmente são sequenciais.
+        Com as condições, eles só acontecem caso algo aconteça.
+        if(condição) {TRUE
+
+        } else {FALSE
+
+        }
+        
+        Existem dois tipos de condição.
+        Uma sem o bloco negativo, e outra com os dois.-->
+        <h1>SISTEMA DE MULTAS <strong>ESTATATAL!!!</strong></h1>
+        <input type="number" id="velocidade" placeholder="Velocidade do veículo...">
+        <input type="number" id="limite" placeholder="Limite permitido...">
+        <input type="number" id="margem" placeholder="Margem de erro...">
+        <input type="button" value="Verificar" id="verificar">
+        <div id="situacao">Situação:<br></div>
+        <script>
+           
+            verificar.addEventListener('click', teste)
+            function teste() {
+                var velocidade1 = window.document.getElementById("velocidade")
+                var limite1 = window.document.getElementById("limite")
+                var margem1 = window.document.getElementById("margem")
+                var velocidade = Number(velocidade1.value)
+                var limite = Number(limite1.value)
+                var margem = Number(margem1.value)
+                var situacao = window.document.getElementById("situacao")
+                var verificar = window.document.getElementById("verificar")
+                    if(velocidade > (limite*margem)) {
+                        situacao.innerHTML += `<br>Você <strong>ultrapassou</strong> o limite de ${limite} e 
+                        pois estava ${velocidade-(limite*margem)} km/h acima da velocidade permitida.`
+                    }else{
+                        situacao.innerHTML = `Você estava a ${(limite*margem)-velocidade}km/h abaixo do permitido. <strong>PARABÉNS</strong>`
+                    }
+                }
+
+        </script>
+    </body>
+</html>

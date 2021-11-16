@@ -1,0 +1,19 @@
+* {
+    background: rgba(2, 83, 45, 0.096);
+    color: white;
+}
+
+#origem {
+    color: rgb(255, 94, 0);
+    border-color: black;
+    border-radius: 20px;
+    padding: 10px 0 10px 10px;
+    height: 20px;
+    width: 100%;
+}
+
+#res {
+    background: red;
+    font-style: italic;
+    font-size: larger;
+}

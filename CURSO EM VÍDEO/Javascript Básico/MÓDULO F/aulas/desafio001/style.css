@@ -1,0 +1,44 @@
+body {
+    background: #beaf55;
+    color: white;
+    text-align: center;
+}
+
+.white-back {
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    border-style: outset;
+    border-width: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+.left {
+    text-align: left;
+}
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+#btn1 {
+    margin: 20px 0  10px 0;
+    padding: 20px;
+    border-radius: 100%;
+    width: 50%;
+    background: rgb(81, 211, 183);
+    color: white;
+    text-transform: uppercase;
+    text-shadow: grey;
+    font: bolder 20px Arial;
+}
+
+#slc1 {
+    padding: 20px;
+}
+
+#divres2 {
+    color: greenyellow;
+    text-shadow: black;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* PARTE 2 SOBRE OPERADORES.
+        AGORA FALAREMOS SOBRE OS RELACIONAIS E LÓGICOS, ALÉM DO TERNÁRIO.
+        > Maior que
+        < Menor que
+        >= Maior ou igual
+        <= Menor ou igual
+        == Igual à
+        != Diferente de 
+        */
+       var x = 5 > 2
+       var y = 7 < 4
+       var a = 8 >= 8
+       var b = 9 <= 7
+       var c = 5 == 5
+       var d = 4 != 4
+
+       //Todas as anteriores retornam valores True ou False(boolean).
+
+       // Existem também os indicadores de identidade, que são bem simples.
+
+       var t = 5 == '5' //Isso retornará TRUE, testando se são IDÊNTICOS.
+       // Por incrível que pareça, o JS testa se as 'grandezas' são iguais mesmo apesar do tipo
+
+       /* Por isso, existe um outro teste de igualdade feito 
+       exatamente para testar se os números são iguais tanto em tipo
+       quanto em valor. Esse teste usa 3 sinais de igual( === )
+       */
+
+       var m = 5 === '5' //Este sim retornará false, pois o tipo é diferente.
+       var n = 5 === 5 //Retorna True
+       // Sendo assim, a última variação possível é de DESIGUAL RESTRITO.
+       var m = 5
+       var n = '5'
+       var qual = n !== m //Retorna True, pois apesar dos valores serem iguals, o tipo é diferente.
+
+       /* FIM DOS RELACIONAIS */
+
+       // --- COMEÇO DOS LÓGICOS --- //
+
+       /*
+
+       ! - negação
+        É um operador unário, ou seja, só True ou False.
+        
+       && - conjunção (e)
+        É um valor binário, ou seja, pode ter 4 opções.
+        00 True
+        01 False
+        10 False
+        11 False
+        
+       || - disjunção(ou)
+        Parecido com o anterior, dependendo dos valores lógicos, retorna um bool.
+        00 True
+        01 True
+        10 True
+        11 False
+        
+        VALE LEMBRAR QUE A ORDEM DAS OPERAÇÕES É A SEGUINTE:
+        ARITMÉTICOS
+        RELACIONAIS
+        LÓGICOS
+
+        Quanto aos lógicos, a ordem é sempre: !; &&; || 
+
+        EXEMPLOS:
+
+        idade >= 15 && idade <= 17
+        estado == 'RJ'  || estado == 'SP'
+        salário > 1500 && sexo != 'M'
+
+        FIM DOS OPERADORES LÓGICOS
+        */
+
+        // -- OPERADORES TERNÁRIOS -- //
+        
+        /* 
+        SÃO ESSES 
+        ? :
+
+        Ou seja, é como um ter IF ou ELSE, mas de forma simflificada. Ex:
+
+         média >= 7 ? "Aprovado" : "Reprovado"
+         */
+
+        // -- FIM DA AULA -- // 
+    </script>
+</body>
+</html>

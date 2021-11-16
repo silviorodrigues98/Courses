@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #area {
+            font: normal Arial 20pt;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--O QUE É DOM
+    USADO NO NAVEGADOR PARA SEPARAR ELEMENTOS DE UM SITE, ÁRVORE.
+    getElementBy: ID, TagName, Name, ClassName, querySelector.
+    Evento é tudo o que pode acontecer com a Div, principalmente com o Mouse. 
+    mouseenter
+    mousemove
+    mousedown
+    mouseup
+    click
+    mouseout
+
+    Além destes, existem diversos outros na página original do JS.
+
+    Assim, usaremos funções para definir o que vai ocorrer quando o evento acontecer.
+    Colocar dentro de um bloco function ação(param) {}
+-->
+<!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja...
+</div> -->
+<div id="area">
+    Interaja...
+</div>
+<script>
+    var a = window.document.getElementById("area")
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseout', sair)
+    a.addEventListener('mouseenter', entrar)
+    function clicar() {
+        var a = window.document.getElementById("area")
+        a.innerText = "Clicou!"
+        a.style.background = "red"
+    }
+    function entrar() {
+        var a = window.document.getElementById("area")
+        a.innerText = "Entrou..."
+    }
+    function sair() {
+        var a = window.document.getElementById("area")
+        a.innerText = "Saiu :c"
+        a.style.background = "green"
+    }
+</script>
+</body>
+</html>

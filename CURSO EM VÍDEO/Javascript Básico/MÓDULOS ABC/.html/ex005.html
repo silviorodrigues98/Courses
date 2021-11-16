@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /* AULA DE HOJE SERÁ SOBRE OS OPERADORES:
+    ARITMTÉTICOS;
+    RELACIONAIS;
+    ATRIBUIÇÃO;
+    LÓGICOS;
+    TERNÁRIO
+
+    ARTIMÉTICOS: + - * / % **
+
+    DEVE-SE ATENTAR À PRECEDÊNCIA DOS OPERADORES. 
+
+    */
+    var a = 5+3
+    var b = a%5
+    var c = 5*b**2
+    var d = 10-a/2
+    var e = 6*2/6
+    var f = b%e + 4/e
+    document.write(a, b, c, d, e, f)
+    window.alert(`${a}, ${b}, ${c}, ${d}, ${e}, ${f}`)
+
+    var a = a+4 // Chamada de auto atribuição.
+    document.write(`<br>O valor de A é : ${a}`)
+    // Esta atribuição pode ser feita com qualquer operador.
+    b += 4 // É uma forma simplificada de fazer auto atribuição.
+    c **= 6 // Inclusive com exponenciação.
+
+    /* Existe ainda uma simplificação mais simplificada ainda kkkk
+    No caso, ela utiliza o simbolo duas vezes para dizer que o número é incrementado.
+    Como por exemplo: x++; x-- */
+
+    var x = 8
+    x++ // Passa a ser 9
+    x-- // Volta a ser 8
+    /* Este tipo de atribuição faça com que a variável receba a atribuição depois
+    do efeito. Caso queira se somar e depois realizar o teste,
+    basta utilizar no sentido oposto. Ex: ++x; --x */
+    
+    ++x // Var passa a ser 9
+    --x // Var passa a ser 8
+
+    // FIM DA AULA !!!
+
+</script>
+</body>
+</html>

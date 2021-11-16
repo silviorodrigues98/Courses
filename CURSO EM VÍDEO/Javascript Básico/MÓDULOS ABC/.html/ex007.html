@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: white;
+            font: normal light Arial;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    WHAT IS DOM
+        DOCUMENT OBJECT MODEL
+
+        ÁRVORE DOM
+        
+    -->
+    <h1>Iniciando estudos com o <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Qual é a sua mané</p>
+    <div id='msg'>Clique aqui</div> <!-- Este ID deixa mais fácil de achar o objeto-->
+
+    <!-- 
+        Árvore DOM começa da raiz, chamada window
+        Nela, existem 3 divisões: location, document, history
+        No document existe o HTML.
+        O HTML se divide em Head e Body
+        Head tem meta e title, entre outros.
+        Já o body tem h1, div, p.
+        E um P tem um strong.
+
+    -->
+
+    <script>
+        window.document.write('Olá, Mundo! ')
+        window.document.write(window.document.charset)
+        window.document.writeln(window.navigator.appName)
+        window.document.writeln(window.document.URL)
+
+        /* As possibilidades são infinitas 
+        
+        Eles podem ser acessados por MARCA, ID, NOME, CLASSE, SELETOR
+
+        MARCA: getElementsByTagName()
+        
+        */
+       var p1 = window.document.getElementsByTagName('p')[0] // Vai pegar o primeiro parágrafo
+       window.document.writeln(p1.InnerText) // Se o Inner for em maiúsculo dá errado.
+       p1.style.color = 'blue'
+       var corpo = window.document.body
+       corpo.style.color = 'red'
+       window.document.write(p1.innerText) // Este pega o texto limpo inteiro do parágrafo
+       window.document.writeln(p1.innerHTML) //Este pega o texto junto com a formatação
+       window.alert(p1.innerText)
+
+       /* A função getElementBy"ALGO" pode ser usada com as variáveis:
+       Name, Id, ClassName, Selector
+       Dependendo da necessidade do programador
+       Vale ressaltar que a função pega todos os elementos, portanto,
+       caso deseje pegar só um, deve se utilizar o cochete após a função.
+       Ex: getElementByName('alguma')[0] // Este 0 é o número do elemento desejado.
+        */ 
+        //Lembrando que no caso de Id, o Element fica no singular.
+        var x = window.document.getElementById('msg') // Seleciona a Div do começo
+        x.style.background = 'yellow' //Modifica a div selecionada.
+        x.innerText = 'Troque o texto'
+        window.document.writeln(x.innerText)
+
+        //O código de cima também pode ser escrito desta forma:
+
+        var y = window.document.getElementsByName('msg')[0] // Mas no caso o Element fica em plural.
+        y.innerText = "Troque denono"
+
+        //Esta última é a melhor em termos de termos
+
+        var d = window.document.querySelector('div#msg')
+        // Id usa #Hash e Class Usa .Ponto
+        d.style.background = 'blue'
+
+        /* CTRL+K+C COMENTA
+        CTRL+L+U DESCOMENTA
+        SHIFT+ALT+SETA CIMA/BAIXO COPIA A SENTENÇA */
+        
+
+    </script>
+</body>
+</html>

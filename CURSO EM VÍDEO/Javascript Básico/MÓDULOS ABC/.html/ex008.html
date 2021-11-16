@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: greenyellow;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HOJE SERÁ SOBRE EVENTOS DOM
+
+        Eventos significam que algo está acontecendo com um elemento criado por nós,
+        como por exemplo a DIV, ou seja, pode ser por exemplo:
+
+        mouseenter
+        mousemove
+        mousedown
+        mouseup
+        click
+        mouseout
+        muito mais...
+
+        Funções que ocorrem só quando o evento ocorrer, como um IF.
+
+        Eles ocorrem dentro de um bloco, que é nomeado por uma Function
+
+        Assim:
+
+        function ação() {
+            código
+        }
+
+    -->
+    <!--<div id="area" onclick="clicar()" onmouseenter="hover()"
+    onmouseout="sair()"> Clicar é o nome da função que vai ser chamada.
+        Interaja</div> -->
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var area = window.doument.getElementById("area")
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', hover)
+        area.addEventListener('mouseout', sair)
+        /* Estas 3 linhas anteriores substituem o código HTML lá em cima,
+        pra deixar o código mais limpo. */
+        function clicar() {
+            var area = window.document.getElementById("area")
+            area.innerText = "Clicou!!!"
+            area.style.background = 'red'
+        }
+
+        function hover() {
+            var area = window.document.getElementById("area")
+            area.innerText = "Clique..."
+            area.style.background = 'yellow'
+        }
+
+        function sair() {
+            area.innerText = "Tchau !!!"
+            area.style.background = 'greenyellow'
+        }
+        
+        /* Para saber os erros do JS, a solução é ir na página e
+        inpsecionala. Na DevTools o erro aparecerá na área do console. */
+    </script>
+    
+</body>
+</html>
