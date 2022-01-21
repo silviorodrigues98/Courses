@@ -1,2 +1,2 @@
 # CURSOS
-Cursos que eu pude finalizar ao longo do tempo, e que me permitiram aprender e assimilar diversas linguagens, ferramentas e tecnologias.
+Courses that I was able to complete over time, and that allowed me to learn and assimilate different languages, tools and technologies.
